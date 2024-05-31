@@ -59,7 +59,7 @@ export const Input = styled.input`
     width: 80%;
     padding: 0 10px;
     border-radius: 5px;
-    border: 3px solid #12e6c9;
+    border: 3px solid #6664fd;
     background-color: #001624;
     `;
 
@@ -67,7 +67,7 @@ export const Button = styled.button`
     width: 80%;
     height: 40px;
     border-radius: 5px;
-    background-color: #12e6c9;
+    background-color: #6664fd;
     color: #000;
     font-size: 15px;
     font-weight: bold;
