@@ -1,8 +1,5 @@
-import { Button, FormDiv, Input, InputDiv, Label, LoginCard, LoginContainer, LogoImg } from "./Login.style";
-import Logo from './../../assets/logo.png';
-import LogoBlue from './../../assets/logo-white-blue.png';
+import { Button, FormDiv, Input, InputDiv, LoginCard, LoginContainer, LogoImg } from "./Login.style";
 import LogoGreyBlue from './../../assets/logo-grey-blue.png';
-import { Form } from "react-router-dom";
 
 const Login : React.FC = () => {
     return (

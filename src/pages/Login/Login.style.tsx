@@ -44,12 +44,13 @@ export const InputDiv = styled.div`
     width: 80%;
 
     label {
-        color: #fff;
+        color: #bcceeb;
         font-size: 15px;
         margin-bottom: 10px;
         text-align: left;
         margin-top: 20px;
         width: 80%;
+        font-weight: bold;
     }
 
     `;
@@ -61,6 +62,7 @@ export const Input = styled.input`
     border-radius: 5px;
     border: 3px solid #6664fd;
     background-color: #001624;
+    font-weight: bold;
     `;
 
 export const Button = styled.button`
