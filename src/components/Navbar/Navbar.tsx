@@ -1,5 +1,5 @@
 import React from 'react';
-import { Close, CloseDiv, IconImg, Img, Link, MobileBox, MobileLink, MobileMenu, NavbarStyle, Options } from './Navbar.style';
+import { Close, CloseDiv, IconImg, Img, MobileBox, MobileLink, MobileMenu, NavbarStyle, Options } from './Navbar.style';
 import { useNavigate } from 'react-router-dom';
 import menuIcon from './../../assets/menu.png';
 import LogoGreyImg from './../../assets/logo-grey-blue.png';
@@ -33,10 +33,10 @@ const Navbar: React.FC = () => {
                 </div>
                 <Options>
                     <li>
-                        <Link onClick={handleHome}>Home</Link>
+                        <a onClick={handleHome}>Home</a>
                     </li>
                     <li>
-                        <Link onClick={handleLogin}>Sair</Link>
+                        <a onClick={handleLogin}>Sair</a>
                     </li>
                 </Options>
                 </div>

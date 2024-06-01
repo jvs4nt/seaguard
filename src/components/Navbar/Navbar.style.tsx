@@ -7,41 +7,52 @@ export const NavbarStyle = styled.div`
     align-items: center;
     font-family: 'Roboto', sans-serif;
     background-color: #001624;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #032D60;
     padding: 5px;
     font-size: 1rem;
     height: 7vh;
     position: fixed; 
-    top: 0; 
-    width: 100vw; 
+    width: 100%; 
     z-index: 1000; 
+    margin: 0;
 `;
 
 export const Options = styled.nav`
   display: flex;
   gap: 40px;
+  margin-right: 40px;
 
   @media (max-width: 768px) {
     display: none;
   }
-`;
 
-export const Link = styled.a`
+  li {
+    list-style: none;
+  }
+
+  a{
     text-decoration: none;
-    cursor: pointer;
     color: #bcceeb;
     font-weight: 500;
     font-size: 1.2rem;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
-        color: #00A1E0;
+        color: #85aded;
     }
+  
+  }
 `;
+
 
 export const Img = styled.img`
     width: 10rem;
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
 
 `;
 
@@ -102,6 +113,7 @@ export const Menu = styled.div`
 export const IconImg = styled.img`
     width: 20px;
     height: 20px;
+    margin-right: 30px;
     cursor: pointer;
     @media (min-width: 768px) {
       display: none;
