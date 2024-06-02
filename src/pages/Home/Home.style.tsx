@@ -5,7 +5,7 @@ export const HomeContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400vh;
+    height: 500vh;
     min-width: 99.1vw;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ export const TransparentBigCard = styled.div`
     width: 95%;
     padding: 30px;
     height: 600px;
-    background-color: rgba(23, 40, 151, 0.5);
+
     border-radius: 10px;
     transition: 0.3s;
 
@@ -65,6 +65,7 @@ export const BigCard = styled.div`
     background-color: #001624;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 
     h2 {
         color: #bcceeb;
@@ -130,5 +131,41 @@ export const RollDown = styled.h3`
     font-size: 1.5rem;
     font-weight: 100;
     margin-top: 3%;
+    `;
+
+export const CirclesDiv = styled.div`
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+    width: 100%;
+    `;
+
+export const Circle = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #001624;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: 0.3s;
+
+    p {
+        color: #bcceeb;
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        width: 220px;
+        height: 220px;
+    }
     `;
 
