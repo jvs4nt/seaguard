@@ -116,7 +116,7 @@ export const ObserveDiv = styled.div`
     `;
 
 export const MediumImg = styled.img`
-    width: 70%;
+    width: 50%;
     border-radius: 10px;
     border: 3px solid #032D60;
     `;
