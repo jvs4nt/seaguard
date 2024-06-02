@@ -15,7 +15,7 @@ const Home : React.FC = () => {
                     <h2>Seja bem vindo ao projeto...</h2>
                     <Title>SeaGuard AI</Title>
                     <SubTitle>A integração de inteligência artificial para cuidar dos oceanos</SubTitle>
-                    <RollDown>role para baixo</RollDown> 
+                    <RollDown>saiba mais</RollDown> 
                     <FontAwesomeIcon icon={faArrowDown} />
                 </TransparentBigCard>
                 <BigCard>

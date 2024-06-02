@@ -23,10 +23,15 @@ export const TransparentBigCard = styled.div`
     height: 600px;
     background-color: rgba(23, 40, 151, 0.5);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 
     h2 {
         color: #bcceeb;
+        transition: 0.3s;
+
+        &:hover {
+            color: #85aded;
+        }
     }
 
     span {
@@ -34,6 +39,23 @@ export const TransparentBigCard = styled.div`
         font-weight: bold;
     }
 `;
+
+export const Title = styled.h1`
+    color: #bcceeb;
+    font-size: 11rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    `;
+
+export const SubTitle = styled.h2`
+    color: #bcceeb;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    `;
 
 export const BigCard = styled.div`
     display: flex;
@@ -101,22 +123,6 @@ export const MediumImg = styled.img`
 
 export const BigImg = styled.img`
     width: 20%;
-    `;
-
-export const Title = styled.h1`
-    color: #bcceeb;
-    font-size: 11rem;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    `;
-
-export const SubTitle = styled.h2`
-    color: #bcceeb;
-    font-size: 2rem;
-    font-weight: 100;
-    margin-top: 20px;
-    margin-bottom: 20px;
     `;
 
 export const RollDown = styled.h3`
