@@ -60,7 +60,7 @@ export const Title = styled.h1`
     }
 
     @media (max-width: 800px) {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     
     `;
@@ -77,7 +77,7 @@ export const SubTitle = styled.h2`
     }
 
     @media (max-width: 800px) {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     `;
 
@@ -106,6 +106,10 @@ export const BigCard = styled.div`
 
     @media (max-width: 1300px) {
         flex-direction: column;
+    }
+
+    @media (max-width: 800px) {
+        padding: 20px;
     }
 
     `;
