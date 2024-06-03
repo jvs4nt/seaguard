@@ -6,11 +6,13 @@ export const HomeContainer = styled.section`
     flex-direction: column;
     align-items: center;
     height: 500vh;
-    min-width: 99.1vw;
+    min-width: 100vw;
     margin: 0;
     padding: 0;
     background-image: url(${mainbg});
     background-size: cover;
+    
+
 `;
 
 export const TransparentBigCard = styled.div`
@@ -20,7 +22,7 @@ export const TransparentBigCard = styled.div`
     margin-top: 100px;
     width: 95%;
     padding: 30px;
-    height: 600px;
+    height: 70vh;
 
     border-radius: 10px;
     transition: 0.3s;
@@ -38,6 +40,14 @@ export const TransparentBigCard = styled.div`
         color: #85aded;
         font-weight: bold;
     }
+
+    @media (max-width: 1200px) {
+        height: 50vh;
+    }
+
+    @media (max-width: 800px) {
+        height: 45vh;
+    }
 `;
 
 export const Title = styled.h1`
@@ -46,6 +56,14 @@ export const Title = styled.h1`
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media (max-width: 1200px) {
+        font-size: 8rem;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 5rem;
+    }
     
     `;
 
@@ -55,13 +73,21 @@ export const SubTitle = styled.h2`
     font-weight: 100;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media (max-width: 1200px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 1rem;
+    }
     `;
 
 export const BigCard = styled.div`
     display: flex;
     width: 90%;
     padding: 30px;
-    height: 600px;
+    height: 70vh;
     background-color: #001624;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -79,6 +105,11 @@ export const BigCard = styled.div`
         color: #85aded;
         font-weight: bold;
     }
+
+    @media (max-width: 1300px) {
+        flex-direction: column;
+    }
+
     `;
 
 export const Div1 = styled.div`
@@ -86,6 +117,7 @@ export const Div1 = styled.div`
     flex-direction: column;
     width: 50%;
     height: 100%;
+    max-width: fit-content;
 
     p {
         color: #bcceeb;
@@ -94,6 +126,21 @@ export const Div1 = styled.div`
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: justify;
+    }
+
+    @media (max-width: 1300px) {
+        width: 100%;
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 800px) {
+        padding: 20px;
+        p {
+            font-size: 1rem;
+        }
     }
     `;
 
@@ -104,6 +151,19 @@ export const Div2 = styled.div`
     justify-content: space-around;
     width: 50%;
     height: 100%;
+
+    @media (max-width: 1300px) {
+        width: 70%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    @media (max-width: 800px) {
+        justify-content: center;
+        width: 70%;
+        padding: 20px;
+    }
     `;
 
 export const ObserveDiv = styled.div`

@@ -14,7 +14,7 @@ export const NavbarStyle = styled.div`
     position: fixed; 
     width: 100%; 
     z-index: 1000; 
-    margin: 0;
+    
 `;
 
 export const Options = styled.nav`
