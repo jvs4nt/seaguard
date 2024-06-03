@@ -211,8 +211,8 @@ export const Circle = styled.div`
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 200px;
-    height: 200px;
+    width: 165px;
+    height: 165px;
     background-color: #001624;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
@@ -228,8 +228,8 @@ export const Circle = styled.div`
     }
 
     &:hover {
-        width: 220px;
-        height: 220px;
+        width: 175px;
+        height: 175px;
     }
     `;
 
