@@ -5,10 +5,8 @@ export const HomeContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500vh;
-    min-width: 100vw;
-    margin: 0;
-    padding: 0;
+    min-height: 400vh;
+    width: 100%;
     background-image: url(${mainbg});
     background-size: cover;
     
@@ -22,7 +20,7 @@ export const TransparentBigCard = styled.div`
     margin-top: 100px;
     width: 95%;
     padding: 30px;
-    height: 70vh;
+    min-height: 70vh;
 
     border-radius: 10px;
     transition: 0.3s;
@@ -42,11 +40,11 @@ export const TransparentBigCard = styled.div`
     }
 
     @media (max-width: 1200px) {
-        height: 50vh;
+        min-height: 50vh;
     }
 
     @media (max-width: 800px) {
-        height: 45vh;
+        min-height: 45vh;
     }
 `;
 
@@ -87,7 +85,7 @@ export const BigCard = styled.div`
     display: flex;
     width: 90%;
     padding: 30px;
-    height: 70vh;
+    min-height: 70vh;
     background-color: #001624;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -116,7 +114,7 @@ export const Div1 = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
+    min-height: 100%;
     max-width: fit-content;
 
     p {
@@ -198,6 +196,12 @@ export const CirclesDiv = styled.div`
     justify-content: space-around;
     margin-top: 7%;
     width: 100%;
+
+    @media (max-width: 1300px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
     `;
 
 export const Circle = styled.div`
