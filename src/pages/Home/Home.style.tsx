@@ -60,7 +60,7 @@ export const Title = styled.h1`
     }
 
     @media (max-width: 800px) {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     `;
@@ -71,13 +71,14 @@ export const SubTitle = styled.h2`
     font-weight: 100;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 
     @media (max-width: 1200px) {
         font-size: 1.5rem;
     }
 
     @media (max-width: 800px) {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     `;
 
