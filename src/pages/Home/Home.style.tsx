@@ -111,6 +111,8 @@ export const BigCard = styled.div`
 
     @media (max-width: 800px) {
         padding: 20px;
+        width: 100%;
+        border-radius: 0;
     }
 
     `;
@@ -126,6 +128,12 @@ export const VideoCard = styled.div`
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+
+    iframe {
+        width: 90%;
+        height: 600;
+        border-radius: 10px;
+    }
 
     h2 {
         color: #bcceeb;
@@ -146,6 +154,8 @@ export const VideoCard = styled.div`
 
     @media (max-width: 800px) {
         padding: 20px;
+        width: 100%;
+        border-radius: 0;
     }
 
     `;

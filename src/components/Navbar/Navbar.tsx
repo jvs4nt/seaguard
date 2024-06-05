@@ -1,5 +1,5 @@
 import React from 'react';
-import { CloseDiv, IconImg, Img, MobileBox, MobileLink, MobileMenu, NavbarStyle, Options } from './Navbar.style';
+import { CloseDiv, IconImg, Img, MobileBox, MobileLink, NavbarStyle, Options } from './Navbar.style';
 import { useNavigate } from 'react-router-dom';
 import menuIcon from './../../assets/menu.png';
 import LogoGreyImg from './../../assets/logo-grey-blue.png';

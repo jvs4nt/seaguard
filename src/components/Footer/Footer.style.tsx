@@ -10,4 +10,12 @@ export const FooterBox = styled.footer`
     height: 10vh;
     color: #bcceeb;
     font-weight: bold;
+
+    img {
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+    }
     `;
