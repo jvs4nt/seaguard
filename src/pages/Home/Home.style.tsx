@@ -6,7 +6,7 @@ export const HomeContainer = styled.section`
     flex-direction: column;
     align-items: center;
     min-height: 400vh;
-    width: 100%;
+    min-width: 100vw;
     background-image: url(${mainbg});
     background-size: cover;
     

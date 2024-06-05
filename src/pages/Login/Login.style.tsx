@@ -16,11 +16,19 @@ export const LoginContainer = styled.section`
 export const LoginCard = styled.div`
     display: flex;
     flex-direction: column;
-    width: 400px;
-    min-height: 400px;
+    min-width: 400px;
+    min-height: 430px;
     background-color: #001624;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 800px) {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding-top: 50%;
+    }
     `;
 
 export const LogoImg = styled.img`
@@ -32,8 +40,9 @@ export const FormDiv = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
     width: 100%;
-    height: 50px;
+    height: 100%;
     `;
 
 export const InputDiv = styled.div`
@@ -41,11 +50,12 @@ export const InputDiv = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: left;
-    width: 80%;
+    min-width: 80%;
 
     label {
         color: #bcceeb;
         font-size: 15px;
+        font-weight: 100;
         margin-bottom: 10px;
         text-align: left;
         margin-top: 20px;
@@ -62,7 +72,7 @@ export const Input = styled.input`
     border-radius: 5px;
     border: 3px solid #6664fd;
     background-color: #001624;
-    font-weight: bold;
+    font-weight: 100;
     `;
 
 export const Button = styled.button`
@@ -74,4 +84,14 @@ export const Button = styled.button`
     font-size: 15px;
     font-weight: bold;
     margin-top: 30px;
+    `;
+
+export const RegisterLink = styled.a`
+    text-decoration: underline;
+    cursor: pointer;
+    color: #bcceeb;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 20px;
+    transition: 0.3s;
     `;

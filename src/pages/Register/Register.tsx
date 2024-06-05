@@ -1,8 +1,8 @@
-import { Button, FormDiv, Input, InputDiv, LoginCard, LoginContainer, LogoImg, RegisterLink } from "./Login.style";
+import { Button, FormDiv, Input, InputDiv, LoginCard, LoginContainer, LogoImg } from "./../Login/Login.style";
 import LogoGreyBlue from './../../assets/logo-grey-blue.png';
 import { useNavigate } from "react-router-dom";
 
-const Login : React.FC = () => {
+const Register : React.FC = () => {
 
     const navigate = useNavigate();
 
@@ -10,8 +10,8 @@ const Login : React.FC = () => {
         navigate('/home');
     }
 
-    const handleRegister = () => {
-        navigate('/register');
+    const handleLogin = () => {
+        navigate('/');
     }
 
     return (
@@ -21,6 +21,14 @@ const Login : React.FC = () => {
                 <FormDiv>
                 <LogoImg src={LogoGreyBlue} alt="Logo" />
                     <InputDiv>
+                        <label>nome:</label>
+                        <Input type="text" placeholder="digite seu nome" required />
+                    </InputDiv>
+                    <InputDiv>
+                        <label>cpf:</label>
+                        <Input type="text" placeholder="digite seu cpf" required />
+                    </InputDiv>
+                    <InputDiv>
                         <label>email:</label>
                         <Input type="email" placeholder="digite seu email" required />
                     </InputDiv>
@@ -28,8 +36,7 @@ const Login : React.FC = () => {
                         <label>senha:</label>
                         <Input type="password" placeholder="digite sua senha" required />
                     </InputDiv>
-                    <Button onClick={handleHome}>Entrar</Button>
-                    <RegisterLink onClick={handleRegister}>Registre-se aqui!</RegisterLink>
+                    <Button onClick={handleLogin}>Registrar</Button>
                 </FormDiv>
             </LoginCard>
         </LoginContainer>
@@ -37,4 +44,4 @@ const Login : React.FC = () => {
     )
 }
 
-export default Login;
+export default Register;

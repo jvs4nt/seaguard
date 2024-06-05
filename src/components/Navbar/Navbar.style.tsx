@@ -12,7 +12,7 @@ export const NavbarStyle = styled.div`
     font-size: 1rem;
     height: 7vh;
     position: fixed; 
-    width: 100%; 
+    min-width: 100vw;
     z-index: 1000; 
     
 `;
