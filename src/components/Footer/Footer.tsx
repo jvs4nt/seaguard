@@ -21,7 +21,8 @@ const Footer: React.FC = () => {
     return (
         <>
             <FooterBox>
-            SEAGUARD AI - 2024
+                <img src={LogoGreyImg} alt="" width={'100'} />
+            | All Rights Reserved - 2024
             </FooterBox>
         </>
     );

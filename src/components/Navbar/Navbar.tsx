@@ -1,5 +1,5 @@
 import React from 'react';
-import { Close, CloseDiv, IconImg, Img, MobileBox, MobileLink, MobileMenu, NavbarStyle, Options } from './Navbar.style';
+import { CloseDiv, IconImg, Img, MobileBox, MobileLink, MobileMenu, NavbarStyle, Options } from './Navbar.style';
 import { useNavigate } from 'react-router-dom';
 import menuIcon from './../../assets/menu.png';
 import LogoGreyImg from './../../assets/logo-grey-blue.png';
@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faPerson } from '@fortawesome/free-solid-svg-icons';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar: React.FC = () => {
     const navigate = useNavigate();
@@ -60,7 +61,7 @@ const Navbar: React.FC = () => {
                 <MobileMenu>
                     <MobileBox>
                         <CloseDiv onClick={toggleMenu}>
-                            <Close>x</Close>
+                            <FontAwesomeIcon icon={faCircleXmark} style={{ color: '#bcceeb' }} size='2x' />
                         </CloseDiv>
                         <MobileLink onClick={handleHome}>Inicio</MobileLink>
                         <MobileLink onClick={handleProfile}>Perfil</MobileLink>

@@ -66,10 +66,10 @@ export const MobileMenu = styled.div`
     z-index: 1100;
     @media (max-width: 768px) {
         display: flex;
-        background-color: white;
+        background-color: #001624;
         flex-direction: column;
-        width: 120px;
-        height: 150px;
+        width: 200px;
+        height: 100%;
         position: fixed;
         right: 0;
         top: 0;
@@ -83,13 +83,14 @@ export const MobileBox = styled.div`
     width: 100%;
     height: 100%;
     align-items: center;
-    justify-content: space-around;
+    gap: 20px;
+    padding-top: 20px;
 `;
 
 export const MobileLink = styled.a`
     text-decoration: none;
     cursor: pointer;
-    color: #000;
+    color: #bcceeb;
     font-weight: 500;
     font-size: 1.2rem;
     transition: 0.3s;
@@ -125,6 +126,7 @@ export const IconImg = styled.img`
 
 export const CloseDiv = styled.div`
   width: 100%;
+  text-align: center;
 `;
 
 export const Close = styled.p`

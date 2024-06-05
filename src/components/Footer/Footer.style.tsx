@@ -8,4 +8,6 @@ export const FooterBox = styled.footer`
     font-size: 0.8rem;
     width: 100%;
     height: 10vh;
+    color: #bcceeb;
+    font-weight: bold;
     `;
