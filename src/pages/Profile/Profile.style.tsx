@@ -44,7 +44,7 @@ export const ProfileBox = styled.div`
     }
 
     @media (max-width: 800px) {
-        width: 90%;
+        width: 100%;
     }
 `;
 
@@ -56,7 +56,7 @@ export const Title = styled.h1`
     margin-bottom: 20px;
 
     @media (max-width: 1200px) {
-        font-size: 8rem;
+        font-size: 1.6rem;
     }
 `;
 
@@ -100,7 +100,7 @@ export const InfoLabel = styled.label`
     margin-bottom: 10px;
 
     @media (max-width: 1200px) {
-        font-size: 8rem;
+        font-size: 1rem;
     }
 `;
 
@@ -113,6 +113,6 @@ export const InfoInput = styled.input`
     padding: 10px;
 
     @media (max-width: 1200px) {
-        font-size: 8rem;
+        font-size: 1rem;
     }
 `;
