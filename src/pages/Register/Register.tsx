@@ -6,9 +6,9 @@ const Register : React.FC = () => {
 
     const navigate = useNavigate();
 
-    const handleHome = () => {
-        navigate('/home');
-    }
+    // const handleHome = () => {
+    //     navigate('/home');
+    // }
 
     const handleLogin = () => {
         navigate('/');
