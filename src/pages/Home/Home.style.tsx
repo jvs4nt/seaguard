@@ -154,6 +154,7 @@ export const Div2 = styled.div`
     justify-content: space-around;
     width: 50%;
     height: 100%;
+    gap: 20px;
 
     @media (max-width: 1300px) {
         width: 70%;
@@ -201,8 +202,9 @@ export const CirclesDiv = styled.div`
     justify-content: space-around;
     margin-top: 7%;
     width: 100%;
+    margin-bottom: 7%;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
         gap: 20px;
