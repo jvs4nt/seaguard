@@ -5,7 +5,7 @@ export const HomeContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400vh;
+    min-height: 200vh;
     min-width: 100vw;
     background-image: url(${mainbg});
     background-size: cover;
@@ -84,6 +84,41 @@ export const SubTitle = styled.h2`
 
 export const BigCard = styled.div`
     display: flex;
+    width: 90%;
+    padding: 30px;
+    min-height: 70vh;
+    background-color: #001624;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    h2 {
+        color: #bcceeb;
+        font-size: 2rem;
+        font-weight: 100;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    span {
+        color: #85aded;
+        font-weight: bold;
+    }
+
+    @media (max-width: 1300px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 800px) {
+        padding: 20px;
+    }
+
+    `;
+
+export const VideoCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
     padding: 30px;
     min-height: 70vh;
@@ -239,4 +274,5 @@ export const Circle = styled.div`
         height: 175px;
     }
     `;
+
 

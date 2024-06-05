@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
-import { BigCard, Circle, CirclesDiv, Div1, Div2, HomeContainer, MediumImg, ObserveDiv, RollDown, SubTitle, Title, TransparentBigCard } from "./Home.style"
+import { BigCard, Circle, CirclesDiv, Div1, Div2, HomeContainer, MediumImg, ObserveDiv, RollDown, SubTitle, Title, TransparentBigCard, VideoCard } from "./Home.style"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,7 @@ import { faWater } from "@fortawesome/free-solid-svg-icons";
 import { faWarning } from "@fortawesome/free-solid-svg-icons";
 import satelite1 from "../../assets/satelite1.jpeg";
 import satelite2 from "../../assets/satelite2.jpeg";
+import Footer from "../../components/Footer/Footer";
 
 const Home : React.FC = () => {
     return (
@@ -55,7 +56,8 @@ const Home : React.FC = () => {
                     </CirclesDiv>
                 </TransparentBigCard>
 
-                <BigCard>
+                <VideoCard>
+                    <h2>VÍDEO DE APRESENTAÇÃO</h2>
                 <iframe 
                         width="100%" 
                         height="600" 
@@ -63,8 +65,9 @@ const Home : React.FC = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen>
                     </iframe>
-                </BigCard> 
+                </VideoCard> 
             </HomeContainer>
+            <Footer />
         </>
     )
 }

@@ -3,6 +3,10 @@ import { Close, CloseDiv, IconImg, Img, MobileBox, MobileLink, MobileMenu, Navba
 import { useNavigate } from 'react-router-dom';
 import menuIcon from './../../assets/menu.png';
 import LogoGreyImg from './../../assets/logo-grey-blue.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faPerson } from '@fortawesome/free-solid-svg-icons';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar: React.FC = () => {
     const navigate = useNavigate();
@@ -14,6 +18,10 @@ const Navbar: React.FC = () => {
 
     function handleHome() {
         navigate('/home');
+    }
+
+    function handleProfile() {
+        navigate('/profile');
     }
 
 
@@ -33,9 +41,15 @@ const Navbar: React.FC = () => {
                 </div>
                 <Options>
                     <li>
-                        <a onClick={handleHome}>Home</a>
+                        <FontAwesomeIcon icon={faHome} />
+                        <a onClick={handleHome}>Inicio</a>
                     </li>
                     <li>
+                        <FontAwesomeIcon icon={faPerson} />
+                        <a onClick={handleProfile}>Perfil</a>
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon={faRightFromBracket} />
                         <a onClick={handleLogin}>Sair</a>
                     </li>
                 </Options>
@@ -48,7 +62,8 @@ const Navbar: React.FC = () => {
                         <CloseDiv onClick={toggleMenu}>
                             <Close>x</Close>
                         </CloseDiv>
-                        <MobileLink onClick={handleHome}>Home</MobileLink>
+                        <MobileLink onClick={handleHome}>Inicio</MobileLink>
+                        <MobileLink onClick={handleProfile}>Perfil</MobileLink>
                         <MobileLink onClick={handleLogin}>Sair</MobileLink>
                     </MobileBox>
                 </MobileMenu>

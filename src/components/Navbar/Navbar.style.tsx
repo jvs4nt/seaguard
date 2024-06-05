@@ -28,6 +28,9 @@ export const Options = styled.nav`
 
   li {
     list-style: none;
+    
+    a {
+      margin-left: 10px;
   }
 
   a{
