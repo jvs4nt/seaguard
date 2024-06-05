@@ -8,6 +8,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faPerson } from '@fortawesome/free-solid-svg-icons';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 
 const Navbar: React.FC = () => {
     const navigate = useNavigate();
@@ -58,7 +59,24 @@ const Navbar: React.FC = () => {
                 
             </NavbarStyle>
             {isOpen && (
-                <MobileMenu>
+                <motion.div
+                    initial={{ x: '100%' }}
+                    animate={{ x: 0 }}
+                    exit={{ x: '100%' }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    style={{
+                        display: 'flex',
+                        backgroundColor: '#001624',
+                        flexDirection: 'column',
+                        width: '200px',
+                        height: '100%',
+                        position: 'fixed',
+                        right: 0,
+                        top: 0,
+                        zIndex: 1100,
+                        border: '1px solid #032D60'
+                    }}
+                >
                     <MobileBox>
                         <CloseDiv onClick={toggleMenu}>
                             <FontAwesomeIcon icon={faCircleXmark} style={{ color: '#bcceeb' }} size='2x' />
@@ -67,7 +85,7 @@ const Navbar: React.FC = () => {
                         <MobileLink onClick={handleProfile}>Perfil</MobileLink>
                         <MobileLink onClick={handleLogin}>Sair</MobileLink>
                     </MobileBox>
-                </MobileMenu>
+                </motion.div>
             )}
         </>
     );
