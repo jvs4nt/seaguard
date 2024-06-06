@@ -94,7 +94,7 @@ const Register: React.FC = () => {
                         </InputDiv>
                         <InputDiv>
                             <label>cpf:</label>
-                            <Input type="text" placeholder="digite seu cpf" value={cpf} onChange={(e) => setCpf(e.target.value)} required />
+                            <Input type="text" placeholder="digite seu cpf" value={cpf} onChange={(e) => setCpf(e.target.value)} maxLength={11} required />
                         </InputDiv>
                         <Button onClick={handleRegister}>Registrar</Button>
                         <ReturnButton onClick={handleLogin}>Voltar</ReturnButton>
