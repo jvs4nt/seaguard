@@ -16,7 +16,7 @@ export const RegisterContainer = styled.section`
 export const RegisterCard = styled.div`
     display: flex;
     flex-direction: column;
-    min-width: 600px;
+    min-width: 500px;
     min-height: 430px;
     background-color: #001624;
     border-radius: 10px;
@@ -32,5 +32,24 @@ export const RegisterCard = styled.div`
         padding-bottom: 10%;
         margin-top: 0;
         margin-bottom: 0;
+    }
+`;
+
+export const ReturnButton = styled.a`
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #6664fd;
+    color: #6664fd;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 800px) {
+        width: 50%;
     }
 `;

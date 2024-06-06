@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, FormDiv, Input, InputDiv, LogoImg } from "./../Login/Login.style";
 import LogoGreyBlue from './../../assets/logo-grey-blue.png';
 import { useNavigate } from "react-router-dom";
-import { RegisterCard, RegisterContainer } from "./Register.style";
+import { RegisterCard, RegisterContainer, ReturnButton } from "./Register.style";
 
 const Register: React.FC = () => {
     const navigate = useNavigate();
@@ -58,6 +58,10 @@ const Register: React.FC = () => {
         }
     }
 
+    const handleLogin = () => {
+        navigate('/');
+    }
+
     return (
         <>
             <RegisterContainer>
@@ -93,6 +97,7 @@ const Register: React.FC = () => {
                             <Input type="text" placeholder="digite seu cpf" value={cpf} onChange={(e) => setCpf(e.target.value)} required />
                         </InputDiv>
                         <Button onClick={handleRegister}>Registrar</Button>
+                        <ReturnButton onClick={handleLogin}>Voltar</ReturnButton>
                     </FormDiv>
                 </RegisterCard>
             </RegisterContainer>

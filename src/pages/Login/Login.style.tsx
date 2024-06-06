@@ -11,6 +11,8 @@ export const LoginContainer = styled.section`
     padding: 0;
     background-image: url(${loginbg});
 
+    }
+
     `;
 
 export const LoginCard = styled.div`
@@ -43,13 +45,7 @@ export const FormDiv = styled.form`
     margin-bottom: 20px;
     width: 100%;
     height: 100%;
-
-    @media (max-width: 800px) {
-        padding: 10%;
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
+    
     `;
 
 export const InputDiv = styled.div`
@@ -91,6 +87,10 @@ export const Button = styled.button`
     font-size: 15px;
     font-weight: bold;
     margin-top: 30px;
+
+    @media (max-width: 800px) {
+        width: 50%;
+    }
     `;
 
 export const RegisterLink = styled.a`
