@@ -23,9 +23,13 @@ const Navbar: React.FC = () => {
     }
 
     function handleProfile() {
-        navigate('/profile');
+        const cpf = localStorage.getItem('cpf');
+        if (cpf) {
+            navigate(`/profile/${cpf}`);
+        } else {
+            console.error("CPF não encontrado no localStorage");
+        }
     }
-
 
     function toggleMenu() {
         setIsOpen(!isOpen);
@@ -56,7 +60,6 @@ const Navbar: React.FC = () => {
                     </li>
                 </Options>
                 </div>
-                
             </NavbarStyle>
             {isOpen && (
                 <motion.div
@@ -91,4 +94,4 @@ const Navbar: React.FC = () => {
     );
 }
 
-export default Navbar;  
+export default Navbar;

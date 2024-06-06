@@ -13,6 +13,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/:cpf" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   )
