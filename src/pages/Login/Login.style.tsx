@@ -43,6 +43,13 @@ export const FormDiv = styled.form`
     margin-bottom: 20px;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 800px) {
+        padding: 10%;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
     `;
 
 export const InputDiv = styled.div`
