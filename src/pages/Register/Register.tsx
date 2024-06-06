@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, FormDiv, Input, InputDiv, LoginCard, LoginContainer, LogoImg } from "./../Login/Login.style";
+import { Button, FormDiv, Input, InputDiv, LogoImg } from "./../Login/Login.style";
 import LogoGreyBlue from './../../assets/logo-grey-blue.png';
 import { useNavigate } from "react-router-dom";
 import { RegisterCard, RegisterContainer } from "./Register.style";
