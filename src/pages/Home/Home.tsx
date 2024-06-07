@@ -9,14 +9,22 @@ import { faWarning } from "@fortawesome/free-solid-svg-icons";
 import satelite1 from "../../assets/satelite1.jpeg";
 import satelite2 from "../../assets/satelite2.jpeg";
 import Footer from "../../components/Footer/Footer";
+import { useEffect, useState } from "react";
 
 const Home : React.FC = () => {
+    const [userName, setUserName] = useState<string | null>(null);
+
+    useEffect(() => {
+        const name = localStorage.getItem('nome');
+        setUserName(name);
+    }, []);
+
     return (
         <>
         <Navbar />
             <HomeContainer>
                 <TransparentBigCard>
-                    <h2>Seja bem vindo ao projeto...</h2>
+                    <h2>Olá {userName}! Seja bem vindo ao projeto...</h2>
                     <Title>SeaGuard AI</Title>
                     <SubTitle>A integração de inteligência artificial para cuidar dos oceanos</SubTitle>
                     <RollDown>saiba mais</RollDown> 

@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         <>
             <FooterBox>
                 <img src={LogoGreyImg} alt="" width={'100'} onClick={handleHome} />
-                <p>| All Rights Reserved - 2024</p>
+                <p>| João Santos - 554328 | Willian Daniel - 552671 | Ryan Azanha - 553324</p>
             </FooterBox>
         </>
     );

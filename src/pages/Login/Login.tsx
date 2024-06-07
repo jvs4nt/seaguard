@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, FormDiv, Input, InputDiv, LoginCard, LoginContainer, LogoImg, RegisterLink } from "./Login.style";
 import LogoGreyBlue from './../../assets/logo-grey-blue.png';
 import { useNavigate } from "react-router-dom";
+import Footer from '../../components/Footer/Footer';
 
 const Login: React.FC = () => {
     const navigate = useNavigate();
@@ -23,7 +24,8 @@ const Login: React.FC = () => {
             if (response.ok) {
                 const data = await response.json();
                 console.log("Login bem-sucedido:", data);
-                localStorage.setItem('cpf', data.perfil.cpf); // Salva o CPF no localStorage
+                localStorage.setItem('cpf', data.perfil.cpf);
+                localStorage.setItem('nome', data.perfil.nome);
                 navigate('/home');
             } else {
                 const errorData = await response.json();
@@ -60,6 +62,7 @@ const Login: React.FC = () => {
                     </FormDiv>
                 </LoginCard>
             </LoginContainer>
+            <Footer />
         </>
     );
 }

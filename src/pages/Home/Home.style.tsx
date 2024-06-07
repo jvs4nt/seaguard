@@ -6,7 +6,7 @@ export const HomeContainer = styled.section`
     flex-direction: column;
     align-items: center;
     min-height: 200vh;
-    min-width: 100vw;
+    width: 100vw;
     background-image: url(${mainbg});
     background-size: cover;
     
@@ -45,6 +45,10 @@ export const TransparentBigCard = styled.div`
 
     @media (max-width: 800px) {
         min-height: 45vh;
+
+        h2 {
+            font-size: 1rem;
+        }
     }
 `;
 
@@ -80,11 +84,13 @@ export const SubTitle = styled.h2`
     @media (max-width: 800px) {
         font-size: 1rem;
     }
-    `;
+     `;
 
 export const BigCard = styled.div`
     display: flex;
+    flex-direction: row;
     width: 90%;
+    gap: 10%;
     padding: 30px;
     min-height: 70vh;
     background-color: #001624;
@@ -117,48 +123,7 @@ export const BigCard = styled.div`
 
     `;
 
-export const VideoCard = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    padding: 30px;
-    min-height: 70vh;
-    background-color: #001624;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 
-    iframe {
-        width: 90%;
-        height: 600;
-        border-radius: 10px;
-    }
-
-    h2 {
-        color: #bcceeb;
-        font-size: 2rem;
-        font-weight: 100;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    span {
-        color: #85aded;
-        font-weight: bold;
-    }
-
-    @media (max-width: 1300px) {
-        flex-direction: column;
-    }
-
-    @media (max-width: 800px) {
-        padding: 20px;
-        width: 100%;
-        border-radius: 0;
-    }
-
-    `;
 
 export const Div1 = styled.div`
     display: flex;
@@ -196,15 +161,14 @@ export const Div2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    height: 100%;
+    justify-content: center;
     gap: 20px;
 
     @media (max-width: 1300px) {
         width: 70%;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         gap: 20px;
     }
 
@@ -212,6 +176,7 @@ export const Div2 = styled.div`
         justify-content: center;
         width: 70%;
         padding: 20px;
+        margin-left: 10%;
     }
     `;
 
@@ -225,9 +190,20 @@ export const ObserveDiv = styled.div`
     `;
 
 export const MediumImg = styled.img`
-    width: 50%;
+    width: 400px;
+    height:250px;
     border-radius: 10px;
     border: 3px solid #032D60;
+
+    @media (max-width: 1300px) {
+        width: 250px;
+        height: 150px;
+    }
+
+    @media (max-width: 800px) {
+        width: 200px;
+        height: 100px;
+    }
     `;
     
 
@@ -285,4 +261,46 @@ export const Circle = styled.div`
     }
     `;
 
+    export const VideoCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 30px;
+    min-height: 70vh;
+    background-color: #001624;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    iframe {
+        width: 90%;
+        height: 600;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: #bcceeb;
+        font-size: 2rem;
+        font-weight: 100;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    span {
+        color: #85aded;
+        font-weight: bold;
+    }
+
+    @media (max-width: 1300px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 800px) {
+        padding: 20px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    `;
 
