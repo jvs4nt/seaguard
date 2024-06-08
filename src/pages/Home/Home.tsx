@@ -69,7 +69,7 @@ const Home : React.FC = () => {
                     <iframe 
                         width="100%" 
                         height="600" 
-                        src="https://www.youtube.com/embed/byOxbddwnJI" 
+                        src="https://www.youtube.com/embed/KFheog_oa-g" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen>
                     </iframe>
